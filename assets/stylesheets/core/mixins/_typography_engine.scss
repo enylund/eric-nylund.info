@@ -1,0 +1,20 @@
+// Font stacks
+$default: 'arial_narrowbold';
+
+// Body text
+@mixin body-text {
+  font-size: 16px;
+  letter-spacing: -0.01em;;
+  line-height: 1.4;
+  font-family: $default;
+
+  @include breakpoint(sm) {
+    // font-size: 20px;
+    font-size: 30px;
+  }
+}
+.body-text { @include body-text; }
+
+@mixin default-font {
+  @include body-text;
+}
